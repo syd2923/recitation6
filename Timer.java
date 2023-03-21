@@ -30,6 +30,9 @@ public class Timer extends Actor
      */
     public void act() 
     {
-        // TODO: replace this line with your code
+        stopwatchImage.clear();
+        stopWatch.startStop();
+        stopwatchImage.drawString(stopWatch.toString(),0,20);
+        setImage(stopwatchImage);
     }
 }
